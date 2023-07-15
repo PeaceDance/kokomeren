@@ -19,7 +19,6 @@ Template Name: Домашняя страница
         </div>
       </div>
     </div>
-
     <div class="site-section">
       <div class="container">
         <div class="row align-items-stretch section-overlap">
