@@ -1,0 +1,8 @@
+2023-06-16T03:29:25+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\functions.php на строке 66
+
+2023-06-16T03:29:26+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\functions.php на строке 66
+
+2023-06-16T03:36:29+00:00 CRITICAL Cannot redeclare exclude_categories_from_breadcrumbs() (previously declared in C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\functions.php:67) в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\wooc.php на строке 75
+
+2023-06-16T03:36:29+00:00 CRITICAL Cannot redeclare exclude_categories_from_breadcrumbs() (previously declared in C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\functions.php:67) в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\wooc.php на строке 75
+

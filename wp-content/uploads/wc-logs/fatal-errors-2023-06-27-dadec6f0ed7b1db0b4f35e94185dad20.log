@@ -1,0 +1,8 @@
+2023-06-27T04:52:03+00:00 CRITICAL Uncaught Error: Call to a member function add_to_cart_url() on string in C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\single-product.php:22
+Stack trace:
+#0 C:\OSPanel\domains\kokomerennew\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\kokomerennew\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\kokomerennew\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\single-product.php на строке 22
+

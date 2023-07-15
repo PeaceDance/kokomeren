@@ -1,0 +1,24 @@
+2023-07-03T04:08:39+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\archive-product.php на строке 23
+
+2023-07-03T04:12:24+00:00 CRITICAL Cannot redeclare display_woocommerce_categories_with_children() (previously declared in C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\functions.php:68) в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\wooc.php на строке 75
+
+2023-07-03T04:12:25+00:00 CRITICAL Cannot redeclare display_woocommerce_categories_with_children() (previously declared in C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\functions.php:68) в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\wooc.php на строке 75
+
+2023-07-03T05:16:06+00:00 CRITICAL Uncaught Error: Call to undefined function display_woocommerce_categories_with_children() in C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\archive-product.php:6
+Stack trace:
+#0 C:\OSPanel\domains\kokomerennew\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\taxonomy-product-cat.php(22): wc_get_template()
+#2 C:\OSPanel\domains\kokomerennew\wp-includes\template-loader.php(106): include('C:\\OSPanel\\doma...')
+#3 C:\OSPanel\domains\kokomerennew\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#4 C:\OSPanel\domains\kokomerennew\index.php(17): require('C:\\OSPanel\\doma...')
+#5 {main}
+  thrown в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\archive-product.php на строке 6
+
+2023-07-03T05:16:14+00:00 CRITICAL Uncaught Error: Call to undefined function display_woocommerce_categories_with_children() in C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\archive-product.php:6
+Stack trace:
+#0 C:\OSPanel\domains\kokomerennew\wp-includes\template-loader.php(106): include()
+#1 C:\OSPanel\domains\kokomerennew\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\kokomerennew\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown в C:\OSPanel\domains\kokomerennew\wp-content\themes\Kokomeren\woocommerce\archive-product.php на строке 6
+
