@@ -12,10 +12,6 @@ if ( class_exists( 'WooCommerce' ) ) {
     require_once(get_template_directory() . '/wooc.php');
     }
 
-
-
-
-
 add_action( 'wp_enqueue_scripts', function() { 
  
     // Подключение стилей
@@ -134,16 +130,6 @@ function display_main_categories() {
 //     $new_url = 'https://yandex.ru/'; // замените это на URL-адрес вашей страницы оформления заказа
 //     return $new_url;
 // }
-
-
-
-
-
-
-
-
-
-
 
 
 add_theme_support('post-thumbnails');

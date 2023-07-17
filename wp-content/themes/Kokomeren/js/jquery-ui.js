@@ -1748,4 +1748,6 @@ jQuery(document).ready(function($) {
 	  $(this).parent('.cat-item').toggleClass('open');
 	});
   });
+
+  
   

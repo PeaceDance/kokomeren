@@ -1,6 +1,5 @@
 
 <?php
-
 // Подключение файла стилей Woocommerce
 add_action( 'wp_enqueue_scripts', 'my_custom_styles' );
 function my_custom_styles() {
@@ -8,8 +7,6 @@ function my_custom_styles() {
         wp_enqueue_style( 'my-woocommerce-styles', get_stylesheet_directory_uri() . '/woocommerce/my-styles.css' );
     }
 }
-
-
 
 function custom_wc_product_image_sizes() {
     // Главное изображение товара на странице категории
@@ -32,11 +29,6 @@ function custom_shop_posts_per_page($query) {
     }
 }
 add_action('pre_get_posts', 'custom_shop_posts_per_page');
-
-
-
-
-
 
 function display_woocommerce_categories() {
     $args = array(
@@ -61,16 +53,6 @@ function display_woocommerce_categories() {
         echo 'Нет доступных категорий.';
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 function display_woocommerce_categories_with_children($parent_category = 0) {
     $exclude_categories = array(15, 19, 20);
@@ -123,23 +105,8 @@ function display_woocommerce_categories_with_children($parent_category = 0) {
     }
 }
 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
 // Установка нового размера изображения для карточек товаров
 add_image_size('woocommerce_thumbnail', 300, 300, true);
-
 
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {

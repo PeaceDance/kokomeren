@@ -1,25 +1,11 @@
 <?php get_header(); ?>
-<div class="bg-light py-3">
-      <div class="container">
-       <!-- Хлебные крошки -->
-	    <div class="row">
-		    <div class="col-md-12 mb-0">
-			    <?php
-			    if (function_exists('woocommerce_breadcrumb')) {
-				    woocommerce_breadcrumb();
-			    }
-			    ?>
-		    </div>
-	    </div>
-      <!-- Хлебные крошки -->
-      </div>
-    </div>
+
 <div class="arhive-row">
   <div class="sidebar-category">
     <p class="sidebar-title">Категории товаров</p>
     <?php display_woocommerce_categories_with_children(); ?>
   </div>
-  <div class="cards__pagination__box">
+  <div>
     <div class="arhive-cards">
       <?php
       $category = null;
@@ -32,7 +18,7 @@
 
       $args = array(
         'post_type' => 'product',
-        'posts_per_page' => 9,
+        'posts_per_page' => 8,
         'paged' => $paged
       );
 
@@ -90,24 +76,29 @@
     </div>
 
     <?php
-    global $wp_query;
+    $total_pages = $query->max_num_pages;
 
-    $big = 999999999; // Уникальное число, достаточно большое
-    $pagination = paginate_links(array(
-      'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-      'format' => '?paged=%#%',
-      'current' => max(1, get_query_var('paged')),
-      'total' => $query->max_num_pages,
-      'prev_text' => '&lt;',
-      'next_text' => '&gt;',
-      'type' => 'array'
-    ));
+    if ($total_pages > 1) {
+      $current_page = max(1, get_query_var('paged'));
 
-    if ($pagination) {
       echo '<ul class="pagination__ul">';
-      foreach ($pagination as $page) {
-        echo '<li class="pagination__li"><span>' . $page . '</span></li>';
+
+      if ($current_page > 1) {
+        echo '<li class="pagination__li"><a href="' . get_pagenum_link($current_page - 1) . '">&lt;</a></li>';
       }
+
+      for ($i = 1; $i <= $total_pages; $i++) {
+        if ($i === $current_page) {
+          echo '<li class="pagination__li"><span class="page-numbers current">' . $i . '</span></li>';
+        } else {
+          echo '<li class="pagination__li"><a href="' . get_pagenum_link($i) . '" class="page-numbers">' . $i . '</a></li>';
+        }
+      }
+
+      if ($current_page < $total_pages) {
+        echo '<li class="pagination__li"><a href="' . get_pagenum_link($current_page + 1) . '">&gt;</a></li>';
+      }
+
       echo '</ul>';
     }
     ?>

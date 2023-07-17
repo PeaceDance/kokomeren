@@ -9,7 +9,7 @@ $categories = get_terms(array(
 if (!empty($categories)) {
     echo '<ul class="site-menu">';
     echo '<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">';
-    echo '<a href="#">Каталог</a>';
+    echo '<a href="#">Категории</a>';
     echo '<ul class="sub-menu">';
 
     foreach ($categories as $category) {

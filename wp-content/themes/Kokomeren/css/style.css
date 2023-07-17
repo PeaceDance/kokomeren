@@ -60,7 +60,10 @@ a {
     box-shadow: none; }
   .btn.btn-primary:hover {
     background: transparent;
-    color: #197BCC; }
+    color: #197BCC;
+    border-color: #197BCC !important;
+    background-color: transparent !important;
+  }
   .btn.btn-black {
     background: #000;
     color: #fff; }
@@ -362,6 +365,8 @@ a {
     transform: translateX(0%); }
   .site-mobile-menu .site-mobile-menu-header {
     width: 100%;
+    background-color: #197bcc;
+    padding: 10% 0 15% 0;
     float: left;
     margin-bottom: 20px;
     padding-left: 20px;
