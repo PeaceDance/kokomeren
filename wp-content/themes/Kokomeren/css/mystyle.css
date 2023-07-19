@@ -358,7 +358,7 @@ margin: 5px 5px 5px 5px;
 }
 .arhive-cards{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   width: 850px;
 }

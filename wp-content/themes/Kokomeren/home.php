@@ -4,7 +4,7 @@ Template Name: Домашняя страница
 */
 ?>
     <?php get_header(); ?>
-    <div class="site-blocks-cover" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/banner3-1.jpg');">
+    <div class="site-blocks-cover" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/banner3-2.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto order-lg-2 align-self-center">

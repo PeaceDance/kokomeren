@@ -24,11 +24,12 @@ add_action( 'after_setup_theme', 'custom_wc_product_image_sizes' );
 
 // Количество товаров на странице магазина
 function custom_shop_posts_per_page($query) {
-    if ($query->is_main_query() && is_shop()) {
+    if (!is_admin() && $query->is_main_query() && is_shop()) {
         $query->set('posts_per_page', 9);
     }
 }
 add_action('pre_get_posts', 'custom_shop_posts_per_page');
+
 
 function display_woocommerce_categories() {
     $args = array(

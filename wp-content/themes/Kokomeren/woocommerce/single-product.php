@@ -64,10 +64,10 @@
 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
   <table class="table custom-table">
     <tbody>
-      <tr>
+      <!-- <tr>
         <th>Атрибут</th>
         <th>Значение атрибута</th>
-      </tr>
+      </tr> -->
       <?php
         $attributes = $product->get_attributes();
         foreach ($attributes as $attribute) {
