@@ -61,7 +61,6 @@ a {
   .btn.btn-primary:hover {
     background: transparent;
     color: #197BCC;
-    border-color: #197BCC !important;
     background-color: transparent !important;
   }
   .btn.btn-black {
@@ -169,7 +168,8 @@ a {
   top: 0;
   width: 100%;
   /* background: #fff;  */
-  background-color: #197bcc;
+  /* background-color: #197bcc; */
+  background-color: white;
 }
   .site-navbar.position-relative {
     position: relative;
@@ -257,14 +257,13 @@ a {
       padding: 10px 5px; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 10px;
-        text-transform: uppercase;
         letter-spacing: .05em;
         color: #25262a;
         font-size: 14px;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          /* color: #000; */
-          color: white;
+          color: #197BCC;
+          /* color: white; */
         }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }

@@ -1,3 +1,6 @@
+  body{
+    font-family: 'Open Sans', sans-serif !important;
+  }
   .site-menu .menu-item-has-children {
     position: relative;
   }
@@ -83,7 +86,7 @@
   }
   
   .site-menu .menu-item-has-children > a {
-    text-transform: uppercase;
+    text-transform: none;
   }
   
   .site-menu .menu-item-has-children:hover > a,
@@ -241,7 +244,7 @@ margin: 5px 5px 5px 5px;
 .site-block-27 a:hover,
 .site-block-27 .active a {
   background-color: #333;
-  color: #fff;
+  /* color: #fff; */
 }
 
 
@@ -393,7 +396,7 @@ margin: 5px 5px 5px 5px;
   list-style: none;
   font-size: 14px;
   padding-left: 0px;
-  background-color: rgb(250, 247, 247);
+  /* background-color: rgb(250, 247, 247); */
 }
 .logo__image{
   width: 200px;
@@ -470,21 +473,21 @@ margin: 5px 5px 5px 5px;
   margin-top: 15%;
   padding: 6px 12px;
   background-color: #197BCC;
-  color: #000;
+  color: white;
   border-radius: 10px;
   border: 1px solid transparent;
 }
 
 .product_type_simple:hover{
   background: transparent;
-    color: #197BCC;
+    color: black;
     border: 1px solid;
 }
 .woocommerce-breadcrumb{
   font-size: 14px;
 }
 .icon-search:hover{
-  color: white;
+  color: #197BCC;
   transition-duration: 0.5s;
 }
 /* .pagination__ul{
@@ -552,4 +555,16 @@ margin: 5px 5px 5px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.nav-pills .nav-link.active{
+  color: white !important;
+}
+.btn-primary{
+  color: white !important;
+
+  font-weight: 500;
+}
+.btn-primary:hover{
+  color: black !important;
+  border-color: black !important;
 }
